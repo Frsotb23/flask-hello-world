@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull Code') {
             steps {
-                git 'https://github.com/Frsotb23/flask-hello-world.git'
+                git branch: 'main', url: 'https://github.com/Frsotb23/flask-hello-world.git'
             }
         }
         stage('Build Docker Image') {
